@@ -1,0 +1,38 @@
+	Operating System - Assignment 1 
+
+1.	Name : Samarth Parikh
+	Email: sparikh3@bighamton.edu
+	Bnumber: B00710212
+
+2.	Build the program
+
+	-Open the terminal
+	-Go to the directory where you put this file.
+	-Enter the command : "make" .This will execute the Makefile of the current directory which will create object file.
+
+3.	Run program
+
+	- Enter the command: "./minish" 
+	
+4.	Features implemented:
+
+	- execute command in foreground
+	- execute command in foreground with multiple arguments
+	- To execute process in background :"filename &"
+	- execute single process in background
+	- execute multiple processes in background
+	- "cd" and "pwd" command
+	- "exit" command will terminate the shell and also terminate the orphan processes running in background
+	- "listjobs" will list all the processes running in background
+	- "fg processid" will bring the background process to foreground
+	- ctrl + c will not kill the shell but the process running in foreground will be terminated
+	- Error handling is implemented for respective system calls.
+
+5	functions :
+
+	-run()		: to separate the command
+	-exeCommand()	: execute the commamnd with execvp()
+	-showbg()	: Show background processes
+	-updatebg()	: update the background process list
+	-killbg()	: kill all the background process when exit occurs
+	-skipWhite()	: remove the space from the command
